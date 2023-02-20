@@ -1,0 +1,72 @@
+@charset    "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width:768px) {
+     html, body {
+        width: 100vw;
+        height: 100vh;
+        background: black url('../imagens/fundo-madeira.jpg') no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+     }
+     main {
+        height: 100vh;
+        position: relative;
+    }
+     section#itela {
+        position: absolute; /*Absoluto para centralizar*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*Ponto de tranformação centralizado / não esqueça da virula ,*/
+        height: 627px;
+        width: 311px;
+        background: url('../imagens/frame-iphone2.png') no-repeat; /*Não repetir*/
+     }
+
+     iframe#tela {
+        position: relative;
+        top: 80px;
+        left: 22px;
+        width: 269px;
+        height: 477px;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width:768px) { 
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background: black url('../imagens/fundo-madeira.jpg') no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+     }
+     main {
+        height: 100vh;
+        position: relative;
+    }
+     section#itela {
+        position: absolute; /*Absoluto para centralizar*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*Ponto de tranformação centralizado / não esqueça da virula ,*/
+        height: 900px;
+        width: 900px;
+        background: url('../imagens/frame-not.png') no-repeat; /*Não repetir*/
+     }
+
+     iframe#tela {
+        position: relative;
+        top: 175px;
+        left: 87px;
+        width: 725px;
+        height: 459px;
+        border-radius: 10px;
+    }
+
+}

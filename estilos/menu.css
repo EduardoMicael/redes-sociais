@@ -1,0 +1,56 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background: black url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ main {
+    height: 100vh;
+    position: relative;
+}
+ section#itela {
+    position: absolute; /*Absoluto para centralizar*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Ponto de tranformação centralizado / não esqueça da virula ,*/
+    height: 990px;
+    width: 990px;
+    background: url('../imagens/frame-not.png') no-repeat; /*Não repetir*/
+}
+
+<style>
+@charset    "UTF-8";
+*{
+margin: 0px;
+padding: 0px;
+}
+
+main>img {
+position: absolute;
+background-size: contain;
+background-attachment: scroll;
+background-repeat: no-repeat;
+width: 100vw;
+height: 100vh;
+}
+
+section#redes-sociais {
+position: fixed;
+padding-left: 80%;
+}
+
+section#redes-sociais img {
+width: 40px;
+margin: 10px;
+border-radius: 50%;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+border: 2px solid rgba(255, 255, 255, 0.678);
+transform: translate(-3px, -3px);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+transition: transform .3s , border 1s;
+}</style>
